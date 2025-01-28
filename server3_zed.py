@@ -39,8 +39,8 @@ mirror_ref.set_translation(sl.Translation(2.75,4.0,0))
 async def video_stream(websocket):
     global stop_server
     try:
-        vid = cv2.VideoCapture(0)
-        while vid.isOpened() and not stop_server:
+        #vid = cv2.VideoCapture(0)
+        while not stop_server:
 
             if zed.grab(runtime_parameters) == sl.ERROR_CODE.SUCCESS:
                 # Retrieve left image
@@ -71,7 +71,7 @@ async def video_stream(websocket):
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        vid.release()
+        #vid.release()
         print("Video capture released.")
 
 async def main():
