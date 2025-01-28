@@ -59,15 +59,14 @@ class Aruco():
 				cv2.circle(image, (cX, cY), 4, (0, 0, 255), -1)
 				cv2.putText(image, str(markerID),(topLeft[0], topLeft[1] - 10), cv2.FONT_HERSHEY_SIMPLEX,
 					0.5, (0, 255, 0), 2)
-		else:
-			self.aruco_dis=False
-			self.contador=0       
-		return image
+         
+		return image,cX,cY
+
 	def aruco_detect(self,frame):
 		gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 		corners, ids, rejected = cv2.aruco.detectMarkers(image=gray,dictionary=self.arucoDict,parameters=self.arucoParams)
-		frame = self.aruco_display(corners, ids, rejected, frame)
-		return frame
+		frame,x,y = self.aruco_display(corners, ids, rejected, frame)
+		return frame,x,y
 
 class Orange():
 	def __init__(self):
@@ -102,6 +101,7 @@ class Orange():
 		return contours
 
 	def orange_display(self, contours, image):
+		cx, cy = None, None
 		if contours:
 			
 			for (idx, contour) in enumerate(contours):
@@ -118,12 +118,12 @@ class Orange():
 				self.x = cx
 				self.y = cy
 
-		return image
+		return image,cx,cy
 
 	def orange_detect(self,frame):
 		contours = self.contornos(frame)
-		frame = self.orange_display(contours, frame)
-		return frame
+		frame,x,y = self.orange_display(contours, frame)
+		return frame,x,y
 
 class Bottle():
 	def __init__(self):
@@ -144,9 +144,7 @@ class Bottle():
 
 					cx = int(x + (x2 - x) / 2.0)
 					cy = int(y + (y2 - y) / 2.0)
-					self.x = cx
-					self.y = cy
-		return frame
+		return frame,cx,cy
 
 	def bottle_detect(self,image):
 		results = self.model(image)
@@ -155,5 +153,5 @@ class Bottle():
 		bboxes = np.array(result.boxes.xyxy.cpu(), dtype="int")
 		classes = np.array(result.boxes.cls.cpu(), dtype="int")
 
-		detected_bottle = self.bottle_display(image, bboxes, classes)
-		return detected_bottle
+		detected_bottle,x,y = self.bottle_display(image, bboxes, classes)
+		return detected_bottle,x,y

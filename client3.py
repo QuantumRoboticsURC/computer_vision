@@ -4,6 +4,9 @@ import cv2
 import base64
 import numpy as np
 
+
+
+
 async def video_client():
     uri = "ws://192.168.0.59:9999"  # Replace with the server's IP and port
     try:
