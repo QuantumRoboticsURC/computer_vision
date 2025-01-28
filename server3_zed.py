@@ -54,9 +54,10 @@ async def video_stream(websocket):
                 zed.retrieve_measure(point_cloud, sl.MEASURE.XYZRGBA)
                 
                 #_, frame = vid.read()
-                frame = Orange().orange_detect(image_ocv)
-                #frame = Aruco().aruco_detect(frame)
-                #frame = Bottle().bottle_detect(frame)
+                #frame = Orange().orange_detect(image_ocv)
+                #frame = Aruco().aruco_detect(image_ocv)
+                frame = cv2.cvtColor(Bottle().bottle_detect(image_ocv), cv2.COLOR_BGRA2RGB)
+                
 
                 # Compress the frame
                 _, buffer = cv2.imencode('.jpg', frame, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
