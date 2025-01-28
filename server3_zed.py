@@ -55,9 +55,10 @@ async def video_stream(websocket):
                 zed.retrieve_measure(point_cloud, sl.MEASURE.XYZRGBA)
                 
                 #_, frame = vid.read()
-                #frame = Orange().orange_detect(image_ocv)
-                #frame = Aruco().aruco_detect(image_ocv)
-                frame = cv2.cvtColor(Bottle().bottle_detect(image_ocv), cv2.COLOR_BGRA2RGB)
+                #frame,x,y = Orange().orange_detect(image_ocv)
+                #frame,x,y = Aruco().aruco_detect(image_ocv)
+                image_ocv,x,t = Bottle().bottle_detect(image_ocv) 
+                frame = cv2.cvtColor(image_ocv, cv2.COLOR_BGRA2RGB)
                 
 
                 # Compress the frame
@@ -76,7 +77,7 @@ async def video_stream(websocket):
 
 async def main():
     global stop_server
-    server = await websockets.serve(video_stream, '192.168.0.59', 9999, ping_interval=None)
+    server = await websockets.serve(video_stream, '192.168.0.16', 9999, ping_interval=None)
 
     try:
         await server.wait_closed()
