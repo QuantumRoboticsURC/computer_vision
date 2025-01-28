@@ -6,6 +6,7 @@ import math
 from ultralytics import YOLO
 
 
+
 class Aruco():
 	def __init__(self):
 		self.ARUCO_DICT = {
@@ -132,6 +133,7 @@ class Bottle():
 		self.model = YOLO("yolov8n.pt")
 
 	def bottle_display(self, frame, bboxes, classes):
+		cx, cy = None, None
 		if bboxes.any():
 
 			for bbox, cls in zip(bboxes, classes):
