@@ -13,8 +13,8 @@ async def video_stream(websocket):
         vid = cv2.VideoCapture(0)
         while vid.isOpened() and not stop_server:
             _, frame = vid.read()
-            frame,x,y = Orange().orange_detect(frame)
-            #frame,x,y = Aruco().aruco_detect(frame)
+            #frame,x,y = Orange().orange_detect(frame)
+            frame,x,y = Aruco().aruco_detect(frame)
             #frame,x,y = Bottle().bottle_detect(frame)
             print(x,y)
             # Compress the frame

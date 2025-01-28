@@ -39,6 +39,7 @@ class Aruco():
 		self.arucoParams = cv2.aruco.DetectorParameters()
 	
 	def aruco_display(self,corners, ids, rejected, image):
+		cX, cY = None, None
 		if len(corners) > 0:
 			ids = ids.flatten()
 			for (markerCorner, markerID) in zip(corners, ids):
@@ -59,7 +60,7 @@ class Aruco():
 				cv2.circle(image, (cX, cY), 4, (0, 0, 255), -1)
 				cv2.putText(image, str(markerID),(topLeft[0], topLeft[1] - 10), cv2.FONT_HERSHEY_SIMPLEX,
 					0.5, (0, 255, 0), 2)
-         
+		 
 		return image,cX,cY
 
 	def aruco_detect(self,frame):
