@@ -1,3 +1,4 @@
+
 import asyncio
 import websockets
 import cv2
@@ -34,36 +35,32 @@ mirror_ref.set_translation(sl.Translation(2.75,4.0,0))
 
 
 
-
-
 async def video_stream(websocket):
     global stop_server
     try:
-        #vid = cv2.VideoCapture(0)
         while not stop_server:
-
             if zed.grab(runtime_parameters) == sl.ERROR_CODE.SUCCESS:
                 # Retrieve left image
                 zed.retrieve_image(image, sl.VIEW.LEFT)
                 image_ocv = image.get_data()
                 
-                # Retrieve depth map. Depth is aligned on the left image
-                zed.retrieve_measure(depth, sl.MEASURE.DEPTH)
-        
-                depth_ocv = depth.get_data()
-                # Retrieve colored point cloud. Point cloud is aligned on the left image.
-                zed.retrieve_measure(point_cloud, sl.MEASURE.XYZRGBA)
-                
-                #_, frame = vid.read()
-                #frame,x,y = Orange().orange_detect(image_ocv)
-                #frame,x,y = Aruco().aruco_detect(image_ocv)
-                image_ocv,x,t = Bottle().bottle_detect(image_ocv) 
-                frame = cv2.cvtColor(image_ocv, cv2.COLOR_BGRA2RGB)
-                
+                # Convert image_ocv from BGRA to RGB for processing
+                image_rgb = cv2.cvtColor(image_ocv, cv2.COLOR_BGRA2RGB)
 
-                # Compress the frame
+                # Detect bottles using YOLO model
+                processed_image, x, y = Bottle().bottle_detect(image_rgb)
+                # Detect Aruco markers
+                #processed_image = Aruco().aruco_detect(image_ocv)
+                # Detect oranges
+                #processed_image = Orange().orange_detect(image_ocv)
+                # Convert the processed image back to RGB for visualization (if needed)
+                frame = cv2.cvtColor(processed_image, cv2.COLOR_BGR2RGB)
+
+                # Compress the frame for streaming
                 _, buffer = cv2.imencode('.jpg', frame, [int(cv2.IMWRITE_JPEG_QUALITY), 90])
                 frame_data = base64.b64encode(buffer).decode('utf-8')
+
+                # Send the frame data over the WebSocket
                 await websocket.send(frame_data)
                 await asyncio.sleep(0.1)  # Adjust the delay as needed
     except websockets.exceptions.ConnectionClosed as e:
@@ -72,7 +69,6 @@ async def video_stream(websocket):
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        #vid.release()
         print("Video capture released.")
 
 async def main():
