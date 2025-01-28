@@ -46,6 +46,7 @@ async def video_stream(websocket):
                 # Retrieve left image
                 zed.retrieve_image(image, sl.VIEW.LEFT)
                 image_ocv = image.get_data()
+                
                 # Retrieve depth map. Depth is aligned on the left image
                 zed.retrieve_measure(depth, sl.MEASURE.DEPTH)
         
