@@ -5,10 +5,10 @@ import base64
 import numpy as np
 
 
-
+ip = "192.168.0.101"
 
 async def video_client():
-    uri = "ws://192.168.0.16:9999"  # Replace with the server's IP and port
+    uri = "ws://"+ip+":9999"  # Replace with the server's IP and port
     try:
         async with websockets.connect(uri) as websocket:
             print("Connected to the server.")

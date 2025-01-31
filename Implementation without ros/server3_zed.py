@@ -78,6 +78,7 @@ async def video_stream(websocket):
 									point_cloud_value[1] * point_cloud_value[1] +
 									point_cloud_value[2] * point_cloud_value[2])
 						print(f"Distance to Camera at {{{x};{y}}}: {distance}")
+						
 					else : 
 						print(f"The distance can not be computed at {{{x},{y}}}")
 				# Send the frame data over the WebSocket
