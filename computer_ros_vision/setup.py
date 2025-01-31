@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
 
 package_name = 'computer_ros_vision'
+submodules ="computer_ros_vision/submodules"
 
 setup(
     name=package_name,
