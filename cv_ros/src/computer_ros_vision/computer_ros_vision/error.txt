@@ -1,8 +1,8 @@
 AR at None,None
 Traceback (most recent call last):
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 162, in <module>
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 163, in <module>
     main()
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 157, in main
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 158, in main
     executor.spin()
   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 294, in spin
     self.spin_once()
@@ -20,8 +20,6 @@ Traceback (most recent call last):
     await await_or_execute(tmr.callback)
   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
     return callback(*args)
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 140, in zed_async_server
-    loop = asyncio.get_event_loop()
-  File "/usr/lib/python3.10/asyncio/events.py", line 656, in get_event_loop
-    raise RuntimeError('There is no current event loop in thread %r.'
-RuntimeError: There is no current event loop in thread 'ThreadPoolExecutor-0_1'.
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 56, in publish_detection
+    self.CA.x = self.x-self.x_zed
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'
