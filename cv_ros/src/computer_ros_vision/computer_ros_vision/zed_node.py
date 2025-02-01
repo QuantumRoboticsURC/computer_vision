@@ -117,18 +117,20 @@ class ZED_NODE(Node):
 			self.get_logger().info(f"Error in zed_server: {e}")
 
 
-	async def video_stream(self,websocket):
-		global stop_server
+	async def video_stream(self, websocket, path):
 		try:
-			await websocket.send(self.frame_data)
-			await asyncio.sleep(0.1)  # Adjust the delay as needed
+			while True:
+				if self.frame_data:  # Ensure data exists
+					await websocket.send(self.frame_data)
+				else:
+					print("No frame data available, sending empty frame")
+					await websocket.send("")  # Send an empty frame instead of breaking
+				await asyncio.sleep(0.05)  # Reduce delay for smoother streaming
 		except websockets.exceptions.ConnectionClosed as e:
-			print(f"Connection closed: {e}")
-			stop_server = True
+			print(f"Client disconnected: {e}")
 		except Exception as e:
-			print(f"An error occurred: {e}")
-		finally:
-			print("Video capture released.")
+			print(f"WebSocket error: {e}")
+
 
 
 	def zed_async_server(self):
