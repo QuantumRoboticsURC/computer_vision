@@ -47,6 +47,7 @@ class ZED_NODE(Node):
 		self.y_zed = round(self.image.get_height() / 2)
 		self.create_subscription(Int8, "/detection_target", self.target_callback, 10,callback_group=publisher_group)
 		self.publisher = self.create_publisher(CA, "/detection_result", 10)	
+		
   
 		self.server = self.create_timer(0.01,self.zed_server,callback_group=server_group)
 		self.async_server = self.create_timer(0.01,self.zed_async_server,callback_group=async_group)
@@ -117,7 +118,7 @@ class ZED_NODE(Node):
 			self.get_logger().info(f"Error in zed_server: {e}")
 
 
-	async def video_stream(self, websocket, path):
+	async def video_stream(self, websocket):
 		try:
 			while True:
 				if self.frame_data:  # Ensure data exists
