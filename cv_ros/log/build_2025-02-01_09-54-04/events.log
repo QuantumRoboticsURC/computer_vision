@@ -1,0 +1,535 @@
+[0.000000] (-) TimerEvent: {}
+[0.000620] (computer_ros_vision) JobQueued: {'identifier': 'computer_ros_vision', 'dependencies': OrderedDict()}
+[0.001128] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.001411] (computer_ros_vision) JobStarted: {'identifier': 'computer_ros_vision'}
+[0.015202] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.099490] (-) TimerEvent: {}
+[0.200112] (-) TimerEvent: {}
+[0.300669] (-) TimerEvent: {}
+[0.401226] (-) TimerEvent: {}
+[0.501781] (-) TimerEvent: {}
+[0.575573] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.576065] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces'], 'cwd': '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quantum_main'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/quantum_main'), ('OLDPWD', '/home/quantum_main/computer_vision/cv_ros/install'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('MANAGERPID', '2426'), ('SYSTEMD_EXEC_PID', '2769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3887'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quantum_main'), ('JOURNAL_STREAM', '8:43629'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quantum_main'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/quantum_main/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quantum:@/tmp/.ICE-unix/2575,unix/quantum:/tmp/.ICE-unix/2575'), ('INVOCATION_ID', '418042d7ed3a4fcfad1c4f015e332803'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fdd4359c-a929-4cc3-afbe-0625fd892527'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.601966] (-) TimerEvent: {}
+[0.696600] (custom_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.702076] (-) TimerEvent: {}
+[0.802788] (-) TimerEvent: {}
+[0.806477] (custom_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.822828] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.902945] (-) TimerEvent: {}
+[0.967035] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.980203] (custom_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.980962] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.981820] (custom_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.988195] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.003080] (-) TimerEvent: {}
+[1.103665] (-) TimerEvent: {}
+[1.152478] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.171820] (custom_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.172789] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.173851] (custom_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.179627] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.203802] (-) TimerEvent: {}
+[1.304512] (-) TimerEvent: {}
+[1.398265] (computer_ros_vision) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/computer_ros_vision', 'build', '--build-base', '/home/quantum_main/computer_vision/cv_ros/build/computer_ros_vision/build', 'install', '--record', '/home/quantum_main/computer_vision/cv_ros/build/computer_ros_vision/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'quantum_main', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:', 'HOME': '/home/quantum_main', 'OLDPWD': '/home/quantum_main/computer_vision/cv_ros/install', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'MANAGERPID': '2426', 'SYSTEMD_EXEC_PID': '2769', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3887', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'quantum_main', 'JOURNAL_STREAM': '8:43629', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'quantum_main', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/quantum_main/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/quantum:@/tmp/.ICE-unix/2575,unix/quantum:/tmp/.ICE-unix/2575', 'INVOCATION_ID': '418042d7ed3a4fcfad1c4f015e332803', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:fdd4359c-a929-4cc3-afbe-0625fd892527', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/quantum_main/computer_vision/cv_ros/build/computer_ros_vision', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/quantum_main/computer_vision/cv_ros/build/computer_ros_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/quantum_main/computer_vision/cv_ros/install/computer_ros_vision/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.404592] (-) TimerEvent: {}
+[1.505118] (-) TimerEvent: {}
+[1.545913] (custom_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.605277] (-) TimerEvent: {}
+[1.705935] (-) TimerEvent: {}
+[1.729447] (custom_interfaces) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.806100] (-) TimerEvent: {}
+[1.816703] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.825435] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.842240] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.867685] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.900011] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.906162] (-) TimerEvent: {}
+[1.909022] (computer_ros_vision) StdoutLine: {'line': b'running egg_info\n'}
+[1.910539] (computer_ros_vision) StdoutLine: {'line': b'writing ../../build/computer_ros_vision/computer_ros_vision.egg-info/PKG-INFO\n'}
+[1.911084] (computer_ros_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/computer_ros_vision/computer_ros_vision.egg-info/dependency_links.txt\n'}
+[1.911450] (computer_ros_vision) StdoutLine: {'line': b'writing entry points to ../../build/computer_ros_vision/computer_ros_vision.egg-info/entry_points.txt\n'}
+[1.911721] (computer_ros_vision) StdoutLine: {'line': b'writing requirements to ../../build/computer_ros_vision/computer_ros_vision.egg-info/requires.txt\n'}
+[1.912161] (computer_ros_vision) StdoutLine: {'line': b'writing top-level names to ../../build/computer_ros_vision/computer_ros_vision.egg-info/top_level.txt\n'}
+[1.915614] (computer_ros_vision) StdoutLine: {'line': b"reading manifest file '../../build/computer_ros_vision/computer_ros_vision.egg-info/SOURCES.txt'\n"}
+[1.917463] (computer_ros_vision) StdoutLine: {'line': b"writing manifest file '../../build/computer_ros_vision/computer_ros_vision.egg-info/SOURCES.txt'\n"}
+[1.917838] (computer_ros_vision) StdoutLine: {'line': b'running build\n'}
+[1.917984] (computer_ros_vision) StdoutLine: {'line': b'running build_py\n'}
+[1.918974] (computer_ros_vision) StdoutLine: {'line': b'running install\n'}
+[1.919548] (computer_ros_vision) StdoutLine: {'line': b'running install_lib\n'}
+[1.922183] (computer_ros_vision) StdoutLine: {'line': b'running install_data\n'}
+[1.922417] (computer_ros_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.928207] (computer_ros_vision) StdoutLine: {'line': b"removing '/home/quantum_main/computer_vision/cv_ros/install/computer_ros_vision/lib/python3.10/site-packages/computer_ros_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.928914] (computer_ros_vision) StdoutLine: {'line': b'Copying ../../build/computer_ros_vision/computer_ros_vision.egg-info to /home/quantum_main/computer_vision/cv_ros/install/computer_ros_vision/lib/python3.10/site-packages/computer_ros_vision-0.0.0-py3.10.egg-info\n'}
+[1.930857] (computer_ros_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[1.971638] (computer_ros_vision) StdoutLine: {'line': b'Installing server script to /home/quantum_main/computer_vision/cv_ros/install/computer_ros_vision/lib/computer_ros_vision\n'}
+[1.972565] (computer_ros_vision) StdoutLine: {'line': b"writing list of installed files to '/home/quantum_main/computer_vision/cv_ros/build/computer_ros_vision/install.log'\n"}
+[1.986854] (custom_interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.991806] (custom_interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.006338] (-) TimerEvent: {}
+[2.038114] (computer_ros_vision) CommandEnded: {'returncode': 0}
+[2.059918] (computer_ros_vision) JobEnded: {'identifier': 'computer_ros_vision', 'rc': 0}
+[2.106484] (-) TimerEvent: {}
+[2.151512] (custom_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.206036] (custom_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.206526] (-) TimerEvent: {}
+[2.276714] (custom_interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.292762] (custom_interfaces) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.306703] (-) TimerEvent: {}
+[2.407320] (-) TimerEvent: {}
+[2.434827] (custom_interfaces) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.436209] (custom_interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.507519] (-) TimerEvent: {}
+[2.608244] (custom_interfaces) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.608857] (-) TimerEvent: {}
+[2.610614] (custom_interfaces) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.709098] (-) TimerEvent: {}
+[2.746865] (custom_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.765270] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.809248] (-) TimerEvent: {}
+[2.909884] (-) TimerEvent: {}
+[3.010736] (-) TimerEvent: {}
+[3.111699] (-) TimerEvent: {}
+[3.212414] (-) TimerEvent: {}
+[3.312974] (-) TimerEvent: {}
+[3.394884] (custom_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.413134] (-) TimerEvent: {}
+[3.514173] (-) TimerEvent: {}
+[3.614876] (-) TimerEvent: {}
+[3.715537] (-) TimerEvent: {}
+[3.816350] (-) TimerEvent: {}
+[3.917021] (-) TimerEvent: {}
+[4.017680] (-) TimerEvent: {}
+[4.118453] (-) TimerEvent: {}
+[4.156550] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.218609] (-) TimerEvent: {}
+[4.319232] (-) TimerEvent: {}
+[4.419929] (-) TimerEvent: {}
+[4.448327] (custom_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.502418] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.506978] (custom_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.520023] (-) TimerEvent: {}
+[4.579417] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.580232] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.580558] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.580833] (custom_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[4.620188] (-) TimerEvent: {}
+[4.633478] (custom_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.720417] (-) TimerEvent: {}
+[4.727490] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.744670] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.754737] (custom_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.768467] (custom_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.820592] (-) TimerEvent: {}
+[4.845544] (custom_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[4.851700] (custom_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/quantum_main/computer_vision/cv_ros/build/custom_interfaces\n'}
+[4.884415] (custom_interfaces) CommandEnded: {'returncode': 0}
+[4.886553] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[4.889026] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quantum_main'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/quantum_main'), ('OLDPWD', '/home/quantum_main/computer_vision/cv_ros/install'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('MANAGERPID', '2426'), ('SYSTEMD_EXEC_PID', '2769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3887'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quantum_main'), ('JOURNAL_STREAM', '8:43629'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quantum_main'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/quantum_main/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quantum:@/tmp/.ICE-unix/2575,unix/quantum:/tmp/.ICE-unix/2575'), ('INVOCATION_ID', '418042d7ed3a4fcfad1c4f015e332803'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fdd4359c-a929-4cc3-afbe-0625fd892527'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.920748] (-) TimerEvent: {}
+[4.981403] (custom_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.000131] (custom_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.020904] (-) TimerEvent: {}
+[5.021420] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[5.121056] (-) TimerEvent: {}
+[5.221694] (-) TimerEvent: {}
+[5.322504] (-) TimerEvent: {}
+[5.423109] (-) TimerEvent: {}
+[5.523679] (-) TimerEvent: {}
+[5.542729] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.543991] (custom_interfaces) StdoutLine: {'line': b'creating custom_interfaces.egg-info\n'}
+[5.544484] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[5.544917] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[5.545290] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[5.545758] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[5.551210] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[5.551620] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[5.622515] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[5.623748] (-) TimerEvent: {}
+[5.724189] (-) TimerEvent: {}
+[5.824787] (-) TimerEvent: {}
+[5.925556] (-) TimerEvent: {}
+[5.926116] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target custom_interfaces__cpp\n'}
+[5.944693] (custom_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.975312] (custom_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.991855] (custom_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.025710] (-) TimerEvent: {}
+[6.055382] (custom_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/srv/detail/follow_gps__functions.c.o\x1b[0m\n'}
+[6.055973] (custom_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/target_coordinates__functions.c.o\x1b[0m\n'}
+[6.068957] (custom_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/age__functions.c.o\x1b[0m\n'}
+[6.125889] (-) TimerEvent: {}
+[6.185323] (custom_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/coordinates__functions.c.o\x1b[0m\n'}
+[6.187993] (custom_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_c.dir/rosidl_generator_c/custom_interfaces/msg/detail/ca__functions.c.o\x1b[0m\n'}
+[6.226071] (-) TimerEvent: {}
+[6.290009] (custom_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[6.326254] (-) TimerEvent: {}
+[6.357849] (custom_interfaces) StdoutLine: {'line': b'[ 17%] Built target custom_interfaces__rosidl_generator_c\n'}
+[6.378118] (custom_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.383938] (custom_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.391211] (custom_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.426436] (-) TimerEvent: {}
+[6.527079] (-) TimerEvent: {}
+[6.627739] (-) TimerEvent: {}
+[6.685479] (custom_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/age__type_support.cpp.o\x1b[0m\n'}
+[6.727905] (-) TimerEvent: {}
+[6.828728] (-) TimerEvent: {}
+[6.923580] (custom_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/age__type_support.cpp.o\x1b[0m\n'}
+[6.928865] (-) TimerEvent: {}
+[6.968197] (custom_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/age__type_support.cpp.o\x1b[0m\n'}
+[7.029046] (-) TimerEvent: {}
+[7.119858] (custom_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/age__type_support.cpp.o\x1b[0m\n'}
+[7.129211] (-) TimerEvent: {}
+[7.207508] (custom_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/srv/follow_gps__type_support.cpp.o\x1b[0m\n'}
+[7.229390] (-) TimerEvent: {}
+[7.269897] (custom_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/srv/follow_gps__type_support.cpp.o\x1b[0m\n'}
+[7.296366] (custom_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/target_coordinates__type_support.cpp.o\x1b[0m\n'}
+[7.329595] (-) TimerEvent: {}
+[7.341440] (custom_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/age__type_support.c.o\x1b[0m\n'}
+[7.358767] (custom_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/coordinates__type_support.cpp.o\x1b[0m\n'}
+[7.421219] (custom_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/srv/detail/follow_gps__type_support.c.o\x1b[0m\n'}
+[7.423027] (custom_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interfaces/msg/ca__type_support.cpp.o\x1b[0m\n'}
+[7.429774] (-) TimerEvent: {}
+[7.494785] (custom_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.516280] (custom_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/age__type_support_c.cpp.o\x1b[0m\n'}
+[7.521061] (custom_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/target_coordinates__type_support.c.o\x1b[0m\n'}
+[7.530234] (-) TimerEvent: {}
+[7.593581] (custom_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/coordinates__type_support.c.o\x1b[0m\n'}
+[7.595145] (custom_interfaces) StdoutLine: {'line': b'[ 46%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[7.623481] (custom_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/target_coordinates__type_support.cpp.o\x1b[0m\n'}
+[7.632549] (-) TimerEvent: {}
+[7.687716] (custom_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interfaces/msg/detail/ca__type_support.c.o\x1b[0m\n'}
+[7.732749] (-) TimerEvent: {}
+[7.827077] (custom_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking C shared library libcustom_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.832932] (-) TimerEvent: {}
+[7.863705] (custom_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/srv/detail/dds_fastrtps/follow_gps__type_support.cpp.o\x1b[0m\n'}
+[7.874277] (custom_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/srv/detail/follow_gps__type_support_c.cpp.o\x1b[0m\n'}
+[7.888513] (custom_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/srv/detail/follow_gps__type_support.cpp.o\x1b[0m\n'}
+[7.894960] (custom_interfaces) StdoutLine: {'line': b'[ 55%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[7.915955] (custom_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/target_coordinates__type_support_c.cpp.o\x1b[0m\n'}
+[7.933251] (-) TimerEvent: {}
+[8.033973] (-) TimerEvent: {}
+[8.134711] (-) TimerEvent: {}
+[8.235734] (-) TimerEvent: {}
+[8.271354] (custom_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/target_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.284288] (custom_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.335972] (-) TimerEvent: {}
+[8.437057] (-) TimerEvent: {}
+[8.538003] (-) TimerEvent: {}
+[8.639039] (-) TimerEvent: {}
+[8.714140] (custom_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/target_coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.739257] (-) TimerEvent: {}
+[8.747335] (custom_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interfaces/msg/ca__type_support.cpp.o\x1b[0m\n'}
+[8.753186] (custom_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/coordinates__type_support_c.cpp.o\x1b[0m\n'}
+[8.793336] (custom_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/coordinates__type_support.cpp.o\x1b[0m\n'}
+[8.839432] (-) TimerEvent: {}
+[8.940424] (-) TimerEvent: {}
+[9.041404] (-) TimerEvent: {}
+[9.060416] (custom_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/ca__type_support.cpp.o\x1b[0m\n'}
+[9.117207] (custom_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/coordinates__type_support.cpp.o\x1b[0m\n'}
+[9.141626] (-) TimerEvent: {}
+[9.242671] (-) TimerEvent: {}
+[9.343725] (-) TimerEvent: {}
+[9.373845] (custom_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.445110] (-) TimerEvent: {}
+[9.464892] (custom_interfaces) StdoutLine: {'line': b'[ 71%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[9.487535] (custom_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/ca__type_support.cpp.o\x1b[0m\n'}
+[9.545313] (-) TimerEvent: {}
+[9.600427] (custom_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/ca__type_support_c.cpp.o\x1b[0m\n'}
+[9.645535] (-) TimerEvent: {}
+[9.746227] (-) TimerEvent: {}
+[9.847023] (-) TimerEvent: {}
+[9.947718] (-) TimerEvent: {}
+[10.048649] (-) TimerEvent: {}
+[10.071662] (custom_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[10.148846] (-) TimerEvent: {}
+[10.236292] (custom_interfaces) StdoutLine: {'line': b'[ 76%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[10.249010] (-) TimerEvent: {}
+[10.337658] (custom_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.338390] (custom_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.349169] (-) TimerEvent: {}
+[10.422989] (custom_interfaces) StdoutLine: {'line': b'[ 79%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[10.449356] (-) TimerEvent: {}
+[10.491616] (custom_interfaces) StdoutLine: {'line': b'[ 79%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[10.535295] (custom_interfaces) StdoutLine: {'line': b'[ 79%] Built target custom_interfaces\n'}
+[10.549535] (-) TimerEvent: {}
+[10.581517] (custom_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[10.649681] (-) TimerEvent: {}
+[10.750288] (-) TimerEvent: {}
+[10.850865] (-) TimerEvent: {}
+[10.951412] (-) TimerEvent: {}
+[11.051891] (-) TimerEvent: {}
+[11.152426] (-) TimerEvent: {}
+[11.252831] (-) TimerEvent: {}
+[11.353280] (-) TimerEvent: {}
+[11.453681] (-) TimerEvent: {}
+[11.554174] (-) TimerEvent: {}
+[11.654639] (-) TimerEvent: {}
+[11.755068] (-) TimerEvent: {}
+[11.855633] (-) TimerEvent: {}
+[11.909019] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__py\n'}
+[11.950325] (custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_target_coordinates_s.c.o\x1b[0m\n'}
+[11.950903] (custom_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/srv/_follow_gps_s.c.o\x1b[0m\n'}
+[11.951210] (custom_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_age_s.c.o\x1b[0m\n'}
+[11.951433] (custom_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_coordinates_s.c.o\x1b[0m\n'}
+[11.951583] (custom_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_generator_py.dir/rosidl_generator_py/custom_interfaces/msg/_ca_s.c.o\x1b[0m\n'}
+[11.955774] (-) TimerEvent: {}
+[12.056745] (-) TimerEvent: {}
+[12.157672] (-) TimerEvent: {}
+[12.176821] (custom_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[12.257888] (-) TimerEvent: {}
+[12.264601] (custom_interfaces) StdoutLine: {'line': b'[ 90%] Built target custom_interfaces__rosidl_generator_py\n'}
+[12.304944] (custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.305452] (custom_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.306606] (custom_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.358066] (-) TimerEvent: {}
+[12.458752] (-) TimerEvent: {}
+[12.521829] (custom_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.522321] (custom_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.539559] (custom_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.559019] (-) TimerEvent: {}
+[12.592428] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[12.593087] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[12.609690] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.637724] (custom_interfaces) CommandEnded: {'returncode': 0}
+[12.659170] (-) TimerEvent: {}
+[12.759774] (-) TimerEvent: {}
+[12.860600] (-) TimerEvent: {}
+[12.901059] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[12.921427] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces'], 'cwd': '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quantum_main'), ('LC_TIME', 'es_MX.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/quantum_main'), ('OLDPWD', '/home/quantum_main/computer_vision/cv_ros/install'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_MX.UTF-8'), ('MANAGERPID', '2426'), ('SYSTEMD_EXEC_PID', '2769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3887'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quantum_main'), ('JOURNAL_STREAM', '8:43629'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quantum_main'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/quantum_main/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quantum:@/tmp/.ICE-unix/2575,unix/quantum:/tmp/.ICE-unix/2575'), ('INVOCATION_ID', '418042d7ed3a4fcfad1c4f015e332803'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_MX.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_MX.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_MX.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:fdd4359c-a929-4cc3-afbe-0625fd892527'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_MX.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'es_MX.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_MX.UTF-8'), ('LC_PAPER', 'es_MX.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.940589] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.941158] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[12.941563] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.941872] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.942099] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.942344] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__type_support.h\n'}
+[12.942562] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__struct.h\n'}
+[12.942787] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__functions.h\n'}
+[12.943129] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__functions.c\n'}
+[12.943370] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/follow_gps.h\n'}
+[12.943533] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.943667] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/target_coordinates.h\n'}
+[12.943820] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.943970] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__type_support.h\n'}
+[12.944154] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__functions.h\n'}
+[12.944312] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__type_support.h\n'}
+[12.944502] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__functions.c\n'}
+[12.944711] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__struct.h\n'}
+[12.944922] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__struct.h\n'}
+[12.945171] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__functions.h\n'}
+[12.945404] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__functions.c\n'}
+[12.945635] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__struct.h\n'}
+[12.945861] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__functions.h\n'}
+[12.946089] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__struct.h\n'}
+[12.946311] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__functions.c\n'}
+[12.946544] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__type_support.h\n'}
+[12.947123] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__functions.c\n'}
+[12.947367] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__functions.h\n'}
+[12.947603] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__type_support.h\n'}
+[12.947818] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.948030] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/age.h\n'}
+[12.948265] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/ca.h\n'}
+[12.948480] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/coordinates.h\n'}
+[12.948959] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[12.949443] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[12.949632] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[12.950320] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so" to ""\n'}
+[12.950521] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.950696] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.950841] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.951034] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__rosidl_typesupport_fastrtps_c.h\n'}
+[12.951158] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.951304] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.951455] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__rosidl_typesupport_fastrtps_c.h\n'}
+[12.951576] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__rosidl_typesupport_fastrtps_c.h\n'}
+[12.951709] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__rosidl_typesupport_fastrtps_c.h\n'}
+[12.951901] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__rosidl_typesupport_fastrtps_c.h\n'}
+[12.952034] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.952233] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[12.952812] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.952990] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.953213] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.953354] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.953525] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__struct.hpp\n'}
+[12.953663] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__builder.hpp\n'}
+[12.953827] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__traits.hpp\n'}
+[12.953996] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/follow_gps.hpp\n'}
+[12.954173] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.954357] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.954489] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__traits.hpp\n'}
+[12.954661] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__traits.hpp\n'}
+[12.954825] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__struct.hpp\n'}
+[12.954979] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__struct.hpp\n'}
+[12.955212] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__struct.hpp\n'}
+[12.955461] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__builder.hpp\n'}
+[12.955708] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__builder.hpp\n'}
+[12.955916] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__struct.hpp\n'}
+[12.956156] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__builder.hpp\n'}
+[12.956404] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__traits.hpp\n'}
+[12.956629] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__traits.hpp\n'}
+[12.956845] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__builder.hpp\n'}
+[12.957030] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/age.hpp\n'}
+[12.957204] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/target_coordinates.hpp\n'}
+[12.957380] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/coordinates.hpp\n'}
+[12.957570] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/ca.hpp\n'}
+[12.957837] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.958021] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.958169] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.958320] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.958474] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/dds_fastrtps\n'}
+[12.958650] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.958775] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.958924] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959049] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959219] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959378] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.959539] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[12.959700] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.959919] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.960590] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.960763] (-) TimerEvent: {}
+[12.961044] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.961257] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.961395] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.961595] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__rosidl_typesupport_introspection_c.h\n'}
+[12.961726] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__type_support.c\n'}
+[12.961874] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.962029] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.962152] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__rosidl_typesupport_introspection_c.h\n'}
+[12.962303] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__type_support.c\n'}
+[12.962447] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__type_support.c\n'}
+[12.962573] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__type_support.c\n'}
+[12.962723] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__rosidl_typesupport_introspection_c.h\n'}
+[12.962870] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__rosidl_typesupport_introspection_c.h\n'}
+[12.962996] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__rosidl_typesupport_introspection_c.h\n'}
+[12.963138] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__type_support.c\n'}
+[12.963282] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.963549] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[12.964154] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.964328] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[12.964853] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[12.965014] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[12.965209] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv\n'}
+[12.965335] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail\n'}
+[12.965486] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.965649] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/srv/detail/follow_gps__type_support.cpp\n'}
+[12.965825] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[12.965951] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[12.966131] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__type_support.cpp\n'}
+[12.966312] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__type_support.cpp\n'}
+[12.966436] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.966597] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/age__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.966782] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.966945] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/target_coordinates__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.967112] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/coordinates__type_support.cpp\n'}
+[12.967282] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/ca__type_support.cpp\n'}
+[12.967575] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[12.968196] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.968432] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[12.968870] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[12.969041] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[12.969237] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[12.969479] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[12.969753] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.969985] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.970187] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.970388] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.970679] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[12.970868] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv\n'}
+[12.971039] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_follow_gps.py\n'}
+[12.971207] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_follow_gps_s.c\n'}
+[12.972047] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py\n'}
+[12.972304] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.972445] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[12.972710] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[12.972981] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[12.973164] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_target_coordinates_s.c\n'}
+[12.973420] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_ca_s.c\n'}
+[12.973676] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_coordinates.py\n'}
+[12.973861] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_age_s.c\n'}
+[12.974033] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_target_coordinates.py\n'}
+[12.974253] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[12.974450] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_coordinates_s.c\n'}
+[12.974649] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_ca.py\n'}
+[12.974881] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_age.py\n'}
+[12.975100] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.975359] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.975626] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[12.975803] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.976064] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[13.052482] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[13.052949] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py'...\n"}
+[13.053116] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[13.053253] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py'...\n"}
+[13.053384] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_age.py'...\n"}
+[13.053507] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_ca.py'...\n"}
+[13.053627] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_coordinates.py'...\n"}
+[13.053747] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_target_coordinates.py'...\n"}
+[13.053866] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv'...\n"}
+[13.053982] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/__init__.py'...\n"}
+[13.054098] (custom_interfaces) StdoutLine: {'line': b"Compiling '/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/srv/_follow_gps.py'...\n"}
+[13.060891] (-) TimerEvent: {}
+[13.064802] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[13.065534] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[13.066096] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[13.066720] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[13.067024] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[13.067603] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[13.067812] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[13.068389] (custom_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so" to ""\n'}
+[13.068648] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/Age.idl\n'}
+[13.069056] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/srv/FollowGPS.idl\n'}
+[13.069367] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/TargetCoordinates.idl\n'}
+[13.069669] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/Coordinates.idl\n'}
+[13.069969] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/CA.idl\n'}
+[13.070268] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/Age.msg\n'}
+[13.070567] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/srv/FollowGPS.srv\n'}
+[13.070862] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/srv/FollowGPS_Request.msg\n'}
+[13.071168] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/srv/FollowGPS_Response.msg\n'}
+[13.072449] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/TargetCoordinates.msg\n'}
+[13.072809] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/Coordinates.msg\n'}
+[13.072985] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/msg/CA.msg\n'}
+[13.073176] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[13.073328] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[13.073520] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[13.074020] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[13.074299] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[13.074505] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[13.074708] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[13.074884] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[13.075085] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[13.075338] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[13.075579] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[13.075937] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[13.076406] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[13.076740] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.077085] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.077445] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.077817] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[13.078249] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.078513] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.078850] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.079177] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.079519] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[13.079835] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.080204] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.080546] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.080878] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[13.081205] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.081554] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[13.081881] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.082192] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[13.082496] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.082844] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.083089] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.083338] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.083586] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.083863] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.084136] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[13.084339] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[13.084577] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/quantum_main/computer_vision/cv_ros/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[13.090193] (custom_interfaces) CommandEnded: {'returncode': 0}
+[13.161038] (-) TimerEvent: {}
+[13.261577] (-) TimerEvent: {}
+[13.362227] (-) TimerEvent: {}
+[13.385511] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[13.387870] (-) EventReactorShutdown: {}

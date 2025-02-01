@@ -1,0 +1,10 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces:msg/Age.msg",
+    "/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces:srv/FollowGPS.srv",
+    "/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces:msg/TargetCoordinates.msg",
+    "/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces:msg/Coordinates.msg",
+    "/home/quantum_main/computer_vision/cv_ros/src/custom_interfaces:msg/CA.msg"
+  ]
+}

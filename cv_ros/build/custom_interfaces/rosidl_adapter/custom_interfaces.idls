@@ -1,0 +1,5 @@
+/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Age.idl
+/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces/rosidl_adapter/custom_interfaces:srv/FollowGPS.idl
+/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/TargetCoordinates.idl
+/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Coordinates.idl
+/home/quantum_main/computer_vision/cv_ros/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/CA.idl

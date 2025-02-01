@@ -1,0 +1,2 @@
+Invoking command in '/home/quantum_main/computer_vision/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/quantum_main/computer_vision/build/custom_interfaces -- -j6 -l6
+Invoked command in '/home/quantum_main/computer_vision/build/custom_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/quantum_main/computer_vision/build/custom_interfaces -- -j6 -l6

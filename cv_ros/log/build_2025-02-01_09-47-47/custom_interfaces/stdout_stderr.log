@@ -1,0 +1,35 @@
+[  1%] Built target custom_interfaces__cpp
+[ 12%] Built target custom_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_custom_interfaces
+[ 17%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interfaces/msg/detail/target_coordinates__type_support.cpp.o[0m
+[ 25%] Built target custom_interfaces__rosidl_typesupport_cpp
+[ 26%] [32mBuilding CXX object CMakeFiles/custom_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interfaces/msg/detail/dds_fastrtps/target_coordinates__type_support.cpp.o[0m
+[ 38%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c
+[ 49%] Built target custom_interfaces__rosidl_typesupport_introspection_c
+[ 60%] Built target custom_interfaces__rosidl_typesupport_c
+running egg_info
+writing custom_interfaces.egg-info/PKG-INFO
+writing dependency_links to custom_interfaces.egg-info/dependency_links.txt
+writing top-level names to custom_interfaces.egg-info/top_level.txt
+reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'
+[ 60%] Built target ament_cmake_python_build_custom_interfaces_egg
+[ 61%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 63%] [32m[1mLinking CXX shared library libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 71%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp
+[ 79%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 79%] Built target custom_interfaces
+[ 80%] Built target custom_interfaces__py
+[ 90%] Built target custom_interfaces__rosidl_generator_py
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 95%] [32mBuilding C object CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 96%] Built target custom_interfaces__rosidl_typesupport_c__pyext
+[ 98%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[01m[K/home/quantum_main/computer_vision/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c:934:1:[m[K [01;31m[Kfatal error: [m[Kopening dependency file CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o.d: No such file or directory
+  934 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make:76: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:535: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

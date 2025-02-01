@@ -1,0 +1,188 @@
+[0.353s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.353s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa104aaa0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa104a470>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa104a470>>, mixin_verb=('build',))
+[0.789s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.790s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.790s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/quantum_main/computer_vision'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['ignore', 'ignore_ament_install']
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'ignore'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'ignore_ament_install'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['colcon_pkg']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'colcon_pkg'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['colcon_meta']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'colcon_meta'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['ros']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'ros'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['cmake', 'python']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'cmake'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'python'
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extensions ['python_setup_py']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(Implementation without ros) by extension 'python_setup_py'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extension 'ignore'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extension 'ignore_ament_install'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extensions ['colcon_pkg']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extension 'colcon_pkg'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extensions ['colcon_meta']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extension 'colcon_meta'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extensions ['ros']
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(computer_ros_vision) by extension 'ros'
+[0.827s] DEBUG:colcon.colcon_core.package_identification:Package 'computer_ros_vision' with type 'ros.ament_python' and name 'computer_ros_vision'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ignore_ament_install'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_pkg']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_pkg'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['colcon_meta']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'colcon_meta'
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extensions ['ros']
+[0.828s] Level 1:colcon.colcon_core.package_identification:_identify(custom_interfaces) by extension 'ros'
+[0.829s] DEBUG:colcon.colcon_core.package_identification:Package 'custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.830s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.911s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.911s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.918s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/humble
+[0.920s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_args' from command line to 'None'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_target' from command line to 'None'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.999s] Level 5:colcon.colcon_core.verb:set package 'computer_ros_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.999s] DEBUG:colcon.colcon_core.verb:Building package 'computer_ros_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/quantum_main/computer_vision/build/computer_ros_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/quantum_main/computer_vision/install/computer_ros_vision', 'merge_install': False, 'path': '/home/quantum_main/computer_vision/computer_ros_vision', 'symlink_install': False, 'test_result_base': None}
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.001s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/quantum_main/computer_vision/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/quantum_main/computer_vision/install/custom_interfaces', 'merge_install': False, 'path': '/home/quantum_main/computer_vision/custom_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.001s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.003s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.004s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/quantum_main/computer_vision/computer_ros_vision' with build type 'ament_python'
+[1.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('computer_ros_vision', 'ament_prefix_path')
+[1.011s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/ament_prefix_path.ps1'
+[1.013s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/ament_prefix_path.dsv'
+[1.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/ament_prefix_path.sh'
+[1.016s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.016s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.021s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/quantum_main/computer_vision/custom_interfaces' with build type 'ament_cmake'
+[1.022s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/quantum_main/computer_vision/custom_interfaces'
+[1.022s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.023s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.577s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/quantum_main/computer_vision/computer_ros_vision'
+[1.577s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.577s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/quantum_main/computer_vision/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/quantum_main/computer_vision/build/custom_interfaces -- -j6 -l6
+[2.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/quantum_main/computer_vision/computer_ros_vision': PYTHONPATH=/home/quantum_main/computer_vision/build/computer_ros_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/quantum_main/computer_vision/install/computer_ros_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/computer_ros_vision build --build-base /home/quantum_main/computer_vision/build/computer_ros_vision/build install --record /home/quantum_main/computer_vision/build/computer_ros_vision/install.log --single-version-externally-managed install_data
+[3.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/quantum_main/computer_vision/computer_ros_vision' returned '0': PYTHONPATH=/home/quantum_main/computer_vision/build/computer_ros_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/quantum_main/computer_vision/install/computer_ros_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/computer_ros_vision build --build-base /home/quantum_main/computer_vision/build/computer_ros_vision/build install --record /home/quantum_main/computer_vision/build/computer_ros_vision/install.log --single-version-externally-managed install_data
+[3.240s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision' for CMake module files
+[3.242s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision' for CMake config files
+[3.244s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision/lib'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision/bin'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision/lib/pkgconfig/computer_ros_vision.pc'
+[3.245s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision/lib/python3.10/site-packages'
+[3.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('computer_ros_vision', 'pythonpath')
+[3.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/pythonpath.ps1'
+[3.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/pythonpath.dsv'
+[3.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/hook/pythonpath.sh'
+[3.252s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/computer_ros_vision/bin'
+[3.252s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(computer_ros_vision)
+[3.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/package.ps1'
+[3.257s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/package.dsv'
+[3.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/package.sh'
+[3.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/package.bash'
+[3.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/computer_ros_vision/share/computer_ros_vision/package.zsh'
+[3.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/quantum_main/computer_vision/install/computer_ros_vision/share/colcon-core/packages/computer_ros_vision)
+[3.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/quantum_main/computer_vision/build/custom_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/quantum_main/computer_vision/build/custom_interfaces -- -j6 -l6
+[3.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[3.657s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces' for CMake module files
+[3.659s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces' for CMake config files
+[3.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[3.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[3.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[3.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[3.666s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces/lib'
+[3.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[3.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[3.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[3.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces/bin'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces/lib/python3.10/site-packages'
+[3.673s] Level 1:colcon.colcon_core.environment:checking '/home/quantum_main/computer_vision/install/custom_interfaces/bin'
+[3.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[3.676s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[3.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/package.sh'
+[3.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/package.bash'
+[3.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/quantum_main/computer_vision/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[3.683s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/quantum_main/computer_vision/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[3.694s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.695s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.695s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[3.695s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.714s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.715s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.715s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.791s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.792s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/quantum_main/computer_vision/install/local_setup.ps1'
+[3.796s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/quantum_main/computer_vision/install/_local_setup_util_ps1.py'
+[3.800s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/quantum_main/computer_vision/install/setup.ps1'
+[3.802s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/quantum_main/computer_vision/install/local_setup.sh'
+[3.804s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/quantum_main/computer_vision/install/_local_setup_util_sh.py'
+[3.805s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/quantum_main/computer_vision/install/setup.sh'
+[3.808s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/quantum_main/computer_vision/install/local_setup.bash'
+[3.809s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/quantum_main/computer_vision/install/setup.bash'
+[3.811s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/quantum_main/computer_vision/install/local_setup.zsh'
+[3.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/quantum_main/computer_vision/install/setup.zsh'
