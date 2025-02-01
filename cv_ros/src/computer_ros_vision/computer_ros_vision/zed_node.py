@@ -51,6 +51,7 @@ class ZED_NODE(Node):
 		self.aruco = self.create_publisher(Bool, "/detected_aruco", 1)
 		self.orange = self.create_publisher(Bool, "/detected_orange", 1)
 		self.bottle = self.create_publisher(Bool, "/detected_bottle", 1)
+		self.detected = Bool()
 		
   
 		self.server = self.create_timer(0.01,self.zed_server,callback_group=server_group)
@@ -68,17 +69,23 @@ class ZED_NODE(Node):
 			self.CA.x = self.x - self.x_zed
 			self.CA.distance = self.distance
 			if self.detect_type == 0:
-				self.bottle.publish(True)
-				self.aruco.publish(False)
-				self.orange.publish(False)
+				self.detected.data = True
+				self.bottle.publish(self.detected)
+				self.detected.data = False
+				self.aruco.publish(self.detected)
+				self.orange.publish(self.detected)
 			elif self.detect_type == 1:
-				self.bottle.publish(False)
-				self.aruco.publish(True)
-				self.orange.publish(False)
+				self.detected.data = True
+				self.aruco.publish(self.detected)
+				self.detected.data = False
+				self.bottle.publish(self.detected)
+				self.orange.publish(self.detected)
 			else:
-				self.bottle.publish(False)
-				self.aruco.publish(False)
-				self.orange.publish(True)
+				self.detected.data = True
+				self.orange.publish(self.detected)
+				self.detected.data = False
+				self.aruco.publish(self.detected)
+				self.bottle.publish(self.detected)
 
 
 		self.publisher.publish(self.CA)
@@ -131,6 +138,7 @@ class ZED_NODE(Node):
 						
 					else : 
 						print(f"The distance can not be computed at {{{x},{y}}}")
+						self.distance = float("inf")
 		except Exception as e:
 			self.get_logger().info(f"Error in zed_server: {e}")
 
