@@ -1,0 +1,5 @@
+# Ignore ROS2 build and install directories
+build/
+install/
+log/
+.colcon/
