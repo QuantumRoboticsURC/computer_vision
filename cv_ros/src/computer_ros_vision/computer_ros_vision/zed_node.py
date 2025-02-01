@@ -6,7 +6,7 @@ import pyzed.sl as sl
 import math
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int8
+from std_msgs.msg import Int8,Bool
 from custom_interfaces.msg import CA  # Ensure the correct message type is used
 from new_detect import Aruco, Orange, Bottle
 
@@ -46,7 +46,11 @@ class ZED_NODE(Node):
 		self.x_zed = round(self.image.get_width() / 2)
 		self.y_zed = round(self.image.get_height() / 2)
 		self.create_subscription(Int8, "/detection_target", self.target_callback, 10,callback_group=publisher_group)
+  
 		self.publisher = self.create_publisher(CA, "/detection_result", 10)	
+		self.aruco = self.create_publisher(Bool, "/detected_aruco", 1)
+		self.orange = self.create_publisher(Bool, "/detected_orange", 1)
+		self.bottle = self.create_publisher(Bool, "/detected_bottle", 1)
 		
   
 		self.server = self.create_timer(0.01,self.zed_server,callback_group=server_group)
@@ -63,6 +67,19 @@ class ZED_NODE(Node):
 			self.CA.detected = True
 			self.CA.x = self.x - self.x_zed
 			self.CA.distance = self.distance
+			if self.detect_type == 0:
+				self.bottle.publish(True)
+				self.aruco.publish(False)
+				self.orange.publish(False)
+			elif self.detect_type == 1:
+				self.bottle.publish(False)
+				self.aruco.publish(True)
+				self.orange.publish(False)
+			else:
+				self.bottle.publish(False)
+				self.aruco.publish(False)
+				self.orange.publish(True)
+
 
 		self.publisher.publish(self.CA)
 
