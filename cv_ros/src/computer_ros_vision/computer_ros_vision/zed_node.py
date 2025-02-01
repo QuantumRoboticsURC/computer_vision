@@ -8,7 +8,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int8
 from custom_interfaces.msg import CA  # Ensure the correct message type is used
-from submodules.new_detect import Aruco, Orange, Bottle
+from new_detect import Aruco, Orange, Bottle
 
 from rclpy.executors import SingleThreadedExecutor, MultiThreadedExecutor
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
@@ -16,6 +16,7 @@ from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallb
 class ZED_NODE(Node):
 	
 	def __init__(self):
+		super().__init__('zed_node')
 		server_group = MutuallyExclusiveCallbackGroup()
 		publisher_group = ReentrantCallbackGroup()
 		async_group = ReentrantCallbackGroup()
