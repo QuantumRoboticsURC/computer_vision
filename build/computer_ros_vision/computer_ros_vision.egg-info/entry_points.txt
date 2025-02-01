@@ -1,0 +1,3 @@
+[console_scripts]
+server = computer_ros_vision.server3_zed:main
+

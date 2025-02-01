@@ -8,7 +8,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int8
 from custom_interfaces.msg import CA  # Ensure the correct message type is used
-from .submodules.new_detect import Aruco, Orange, Bottle
+from submodules.new_detect import Aruco, Orange, Bottle
 
 stop_server = False
 detect_type = 2  # Default to Orange
@@ -31,7 +31,7 @@ depth = sl.Mat()
 point_cloud = sl.Mat()
 mirror_ref = sl.Transform()
 mirror_ref.set_translation(sl.Translation(2.75, 4.0, 0))
-
+ip = '192.168.0.101'
 x, y = 360, 360
 
 
@@ -111,11 +111,11 @@ async def video_stream(websocket):
 
 
 async def main():
-    global ros_node
+    global ros_node,ip
     rclpy.init()
     ros_node = ROS2Detection()
 
-    server = await websockets.serve(video_stream, '192.168.0.16', 9999, ping_interval=None)
+    server = await websockets.serve(video_stream, ip, 9999, ping_interval=None)
 
     try:
         rclpy.spin(ros_node)

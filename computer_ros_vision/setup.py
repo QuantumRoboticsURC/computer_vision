@@ -20,7 +20,7 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': ['server=computer_ros_vision.server3_zed:main'
         ],
     },
 )
