@@ -1,8 +1,14 @@
 AR at None,None
+Event loop closed. Program exited.
+Event loop closed. Program exited.
+Event loop closed. Program exited.
+Event loop closed. Program exited.
+Event loop closed. Program exited.
+AR at None,None
 Traceback (most recent call last):
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 163, in <module>
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 170, in <module>
     main()
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 158, in main
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 165, in main
     executor.spin()
   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 294, in spin
     self.spin_once()
@@ -20,6 +26,27 @@ Traceback (most recent call last):
     await await_or_execute(tmr.callback)
   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 107, in await_or_execute
     return callback(*args)
-  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 56, in publish_detection
-    self.CA.x = self.x-self.x_zed
-TypeError: unsupported operand type(s) for -: 'NoneType' and 'int'
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 150, in zed_async_server
+    loop.run_until_complete(main())
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/quantum_main/computer_vision/cv_ros/src/computer_ros_vision/computer_ros_vision/zed_node.py", line 136, in main
+    server = await websockets.serve(self.video_stream, self.ip, self.port, ping_interval=None)
+  File "/home/quantum_main/.local/lib/python3.10/site-packages/websockets/asyncio/server.py", line 828, in __await_impl__
+    server = await self.create_server
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1540, in create_server
+    server._start_serving()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 318, in _start_serving
+    sock.listen(self._backlog)
+OSError: [Errno 98] Address already in use
+Event loop closed. Program exited.
+^CException ignored in: <module 'threading' from '/usr/lib/python3.10/threading.py'>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1537, in _shutdown
+    atexit_call()
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 31, in _python_exit
+    t.join()
+  File "/usr/lib/python3.10/threading.py", line 1096, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.10/threading.py", line 1116, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):

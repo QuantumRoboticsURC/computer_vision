@@ -38,6 +38,7 @@ class ZED_NODE(Node):
 		self.mirror_ref = sl.Transform()
 		self.mirror_ref.set_translation(sl.Translation(2.75, 4.0, 0))
 		self.ip = '192.168.0.16'
+		self.port = 9888
 		self.CA = CA()
 		self.x, self.y,self.distance = None, None,0
 		self.detect_type = 1  # Default to Aruco
@@ -132,7 +133,7 @@ class ZED_NODE(Node):
 
 	def zed_async_server(self):
 		async def main():
-			server = await websockets.serve(self.video_stream, self.ip, 9999, ping_interval=None)
+			server = await websockets.serve(self.video_stream, self.ip, self.port, ping_interval=None)
 			try:
 				await server.wait_closed()
 			finally:
