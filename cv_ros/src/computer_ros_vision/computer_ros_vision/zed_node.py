@@ -126,18 +126,19 @@ class ZED_NODE(Node):
 
 	def zed_async_server(self):
 		async def main():
-			global stop_server
 			server = await websockets.serve(self.video_stream, self.ip, 9999, ping_interval=None)
-
 			try:
 				await server.wait_closed()
 			finally:
-				# Cancel all tasks on shutdown
 				tasks = [t for t in asyncio.all_tasks() if t is not asyncio.current_task()]
 				[task.cancel() for task in tasks]
 				await asyncio.gather(*tasks, return_exceptions=True)
 				print("Server and tasks shut down cleanly.")
-		loop = asyncio.get_event_loop()
+
+		# ✅ Fix: Explicitly create and set a new event loop in this thread
+		loop = asyncio.new_event_loop()
+		asyncio.set_event_loop(loop)
+
 		try:
 			loop.run_until_complete(main())
 			loop.run_forever()
@@ -146,7 +147,7 @@ class ZED_NODE(Node):
 		finally:
 			loop.run_until_complete(asyncio.sleep(0.1))  # Allow tasks to settle
 			loop.close()
-			print("Event loop closed. Program exited.")
+			print("Event loop closed. Program exited.")	
 
 
 def main(args=None):
