@@ -53,11 +53,17 @@ class ZED_NODE(Node):
 
 
 	def publish_detection(self):
-		self.CA.x = self.x-self.x_zed
-		self.CA.distance = self.distance
-		self.CA.detected = True if self.x is not None and self.y is not None else False
-		self.publish_detection.publish(self.CA)
-  
+		if self.x is None or self.y is None:
+			self.CA.detected = False
+			self.CA.x = 0  # Default value
+			self.CA.distance = 0.0  # Default value
+		else:
+			self.CA.detected = True
+			self.CA.x = self.x - self.x_zed
+			self.CA.distance = self.distance
+
+		self.publisher.publish(self.CA)
+
 	def target_callback(self, msg):
 		self.detect_type = msg.data
 
