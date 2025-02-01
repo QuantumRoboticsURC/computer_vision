@@ -37,7 +37,7 @@ class ZED_NODE(Node):
 		self.point_cloud = sl.Mat()
 		self.mirror_ref = sl.Transform()
 		self.mirror_ref.set_translation(sl.Translation(2.75, 4.0, 0))
-		self.ip = '192.168.0.101'
+		self.ip = '192.168.0.16'
 		self.CA = CA()
 		self.x, self.y,self.distance = None, None,0
 		self.detect_type = 1  # Default to Aruco
