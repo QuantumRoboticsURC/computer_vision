@@ -38,7 +38,7 @@ class ZED_NODE(Node):
 		self.mirror_ref.set_translation(sl.Translation(2.75, 4.0, 0))
 		self.ip = '192.168.0.101'
 		self.CA = CA()
-		self.x, self.y,self.distance = 360, 360,0
+		self.x, self.y,self.distance = None, None,0
 		self.detect_type = 1  # Default to Aruco
 		self.frame_data = None
 		self.x_zed = round(self.image.get_width() / 2)
@@ -53,7 +53,6 @@ class ZED_NODE(Node):
 
 	def publish_detection(self):
 		self.CA.x = self.x-self.x_zed
-		self.CA.y = self.y-self.y_zed
 		self.CA.distance = self.distance
 		self.CA.detected = True if self.x is not None and self.y is not None else False
 		self.publish_detection.publish(self.CA)
