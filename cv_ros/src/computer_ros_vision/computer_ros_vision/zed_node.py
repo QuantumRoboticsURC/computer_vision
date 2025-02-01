@@ -19,7 +19,7 @@ class ZED_NODE(Node):
 		super().__init__('zed_node')
 		server_group = MutuallyExclusiveCallbackGroup()
 		publisher_group = ReentrantCallbackGroup()
-		async_group = ReentrantCallbackGroup()
+		async_group = MutuallyExclusiveCallbackGroup()
 		self.zed = sl.Camera()
 
 		# Initialize ZED Camera
