@@ -1,8 +1,0 @@
-[01m[K/home/quantum_main/computer_vision/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c:934:1:[m[K [01;31m[Kfatal error: [m[Kopening dependency file CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o.d: No such file or directory
-  934 | [01;31m[K}[m[K
-      | [01;31m[K^[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make:76: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:535: CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2
