@@ -3,9 +3,8 @@ import websockets
 import cv2
 import base64
 import numpy as np
-
 async def video_client():
-    uri = "ws://192.168.0.16:9999"  # Replace with the server's IP and port
+    uri = "ws://192.168.0.16:9888"  # Replace with the server's IP and port
     try:
         async with websockets.connect(uri) as websocket:
             print("Connected to the server.")
@@ -13,6 +12,11 @@ async def video_client():
                 try:
                     # Receive the frame data
                     frame_data = await websocket.recv()
+
+                    # Handle empty frames
+                    if not frame_data:
+                        print("Received empty frame, skipping...")
+                        continue
 
                     # Decode the base64 frame
                     frame_buffer = base64.b64decode(frame_data)
@@ -22,7 +26,8 @@ async def video_client():
                     frame = cv2.imdecode(frame_array, cv2.IMREAD_COLOR)
 
                     # Display the frame
-                    cv2.imshow("Video Stream", frame)
+                    if frame is not None:
+                        cv2.imshow("Video Stream", frame)
 
                     # Exit on 'q' key press
                     if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -39,6 +44,7 @@ async def video_client():
     finally:
         cv2.destroyAllWindows()
         print("Client stopped.")
+
 
 # Run the client
 asyncio.get_event_loop().run_until_complete(video_client())

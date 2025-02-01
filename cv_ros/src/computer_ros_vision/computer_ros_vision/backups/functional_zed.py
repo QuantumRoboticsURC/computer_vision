@@ -134,8 +134,6 @@ class ZED_NODE(Node):
 	def zed_async_server(self):
 		async def main():
 			server = await websockets.serve(self.video_stream, self.ip, self.port, ping_interval=None)
-			while True:
-				await asyncio.sleep(1)
 			try:
 				await server.wait_closed()
 			finally:
