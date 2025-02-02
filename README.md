@@ -1,10 +1,9 @@
-# computer_vision
 
-To fix the no detect markets error run: 
+This repository was created by the URC team Quantum Robotics for the 2025 URC competition, as an upgrade to last year's camera manager [https://github.com/QuantumRoboticsURC/camera_manager]. 
 
-pip install --upgrade opencv-contrib-python
 
-To fix the zed problem of the   File "pyzed\\sl.pyx", line 1, in init pyzed.sl
-ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+The main contributors to the current implementation are:
 
-Uninstall numpy and install the version 1.26.1
+1. Iker Fuentes: https://github.com/A01749675 
+2. César Flores: https://github.com/A01751101
+3. Emiliano Vivas: https://github.com/emvivas
