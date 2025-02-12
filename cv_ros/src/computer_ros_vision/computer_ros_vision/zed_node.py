@@ -47,7 +47,7 @@ class ZED_NODE(Node):
 		self.y_zed = round(self.image.get_height() / 2)
 		self.create_subscription(Int8, "/detection_target", self.target_callback, 10,callback_group=publisher_group)
   
-		self.publisher = self.create_publisher(CA, "/detection_result", 10)	
+		self.publisher = self.create_publisher(CA, "/center_approach", 10)	
 		self.aruco = self.create_publisher(Bool, "/detected_aruco", 1)
 		self.orange = self.create_publisher(Bool, "/detected_orange", 1)
 		self.bottle = self.create_publisher(Bool, "/detected_bottle", 1)
@@ -58,6 +58,12 @@ class ZED_NODE(Node):
 		self.async_server = self.create_timer(0.01,self.zed_async_server,callback_group=async_group)
 		self.publisher_timer = self.create_timer(0.01,self.publish_detection,callback_group=publisher_group)
 
+	def between(self,val,minus,plus):
+		if not val:
+			return False
+		if val>minus and val<plus:
+			return True
+		return False
 
 	def publish_detection(self):
 		if self.x is None or self.y is None:
@@ -65,9 +71,10 @@ class ZED_NODE(Node):
 			self.CA.x = 0  # Default value
 			self.CA.distance = 0.0  # Default value
 		else:
-			self.CA.detected = True
+			
 			self.CA.x = self.x - self.x_zed
 			self.CA.distance = self.distance
+			self.CA.detected = self.between(self.CA.x,-20,20)
 			if self.detect_type == 0:
 				self.detected.data = True
 				self.bottle.publish(self.detected)

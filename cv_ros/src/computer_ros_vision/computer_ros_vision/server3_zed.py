@@ -47,6 +47,8 @@ class ROS2Detection(Node):
         global detect_type
         detect_type = msg.data
         self.get_logger().info(f"Detection type updated to {detect_type}")
+        
+        
 
     def publish_detection(self, x, y, distance):
         """Publishes detection results."""
@@ -54,6 +56,7 @@ class ROS2Detection(Node):
         msg.x = x
         msg.y = y
         msg.distance = distance
+        
         msg.detected = True if x is not None and y is not None else False
         self.publisher.publish(msg)
         self.get_logger().info(f"Published: x={x}, y={y}, distance={distance}")
