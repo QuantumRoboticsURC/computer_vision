@@ -70,11 +70,19 @@ class ZED_NODE(Node):
 			self.CA.detected = False
 			self.CA.x = 0  # Default value
 			self.CA.distance = 0.0  # Default value
+			self.detected.data = False
+			if self.detect_type == 1: 
+				self.aruco.publish(self.detected)
+			elif self.detect_type == 2:
+				self.orange.publish(self.detected)
+			else:
+				self.bottle.publish(self.detected)
+			
 		else:
 			
 			self.CA.x = self.x - self.x_zed
 			self.CA.distance = self.distance
-			self.CA.detected = self.between(self.CA.x,-20,20)
+			self.CA.detected = True if self.x is not None else False #self.between(self.x,self.x_zed-80,self.x_zed+80)
 			if self.detect_type == 0:
 				self.detected.data = True
 				self.bottle.publish(self.detected)
