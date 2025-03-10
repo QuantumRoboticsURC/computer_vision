@@ -45,7 +45,7 @@ class ZED_NODE(Node):
 		self.frame_data = None
 		self.x_zed = round(self.image.get_width() / 2)
 		self.y_zed = round(self.image.get_height() / 2)
-		self.create_subscription(Int8, "/detection_target", self.target_callback, 10,callback_group=publisher_group)
+		self.create_subscription(Int8, "/state", self.target_callback, 1,callback_group=publisher_group)
   
 		self.publisher = self.create_publisher(CA, "/center_approach", 10)	
 		self.aruco = self.create_publisher(Bool, "/detected_aruco", 1)
@@ -83,25 +83,29 @@ class ZED_NODE(Node):
 			self.CA.x = self.x - self.x_zed
 			self.CA.distance = self.distance
 			self.CA.detected = True if self.x is not None else False #self.between(self.x,self.x_zed-80,self.x_zed+80)
-			if self.detect_type == 0:
+			if self.detect_type == 2: #Bottle
 				self.detected.data = True
 				self.bottle.publish(self.detected)
 				self.detected.data = False
 				self.aruco.publish(self.detected)
 				self.orange.publish(self.detected)
-			elif self.detect_type == 1:
+			elif self.detect_type == 4: #|Aruco
 				self.detected.data = True
 				self.aruco.publish(self.detected)
 				self.detected.data = False
 				self.bottle.publish(self.detected)
 				self.orange.publish(self.detected)
+			elif self.detect_type == 3: # Orange
+				self.detected.data = True
+				self.orange.publish(self.detected)
+				self.detected.data = False
+				self.aruco.publish(self.detected)
+				self.bottle.publish(self.detected)
 			else:
-				self.detected.data = True
-				self.orange.publish(self.detected)
 				self.detected.data = False
 				self.aruco.publish(self.detected)
+				self.orange.publish(self.detected)
 				self.bottle.publish(self.detected)
-
 
 		self.publisher.publish(self.CA)
 
